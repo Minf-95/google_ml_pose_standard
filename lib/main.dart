@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ml_knn_app/knn/knn_view.dart';
 import 'package:ml_knn_app/pose_views/pose_detector_view.dart';
 
 Future<void> main() async {
@@ -41,6 +42,7 @@ class Home extends StatelessWidget {
                     title: Text('Vision APIs'),
                     children: [
                       CustomCard('Pose Detection', PoseDetectorView()),
+                      CustomCard('KNN', KnnView()),
                     ],
                   ),
                 ],
